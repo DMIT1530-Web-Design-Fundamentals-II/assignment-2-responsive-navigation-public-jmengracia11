@@ -33,7 +33,6 @@ header {
 .menu-icon {
     width: 2.5rem;
     text-align: center;
-    padding: 0;
     border: none;
     background: none;
 }
@@ -45,7 +44,7 @@ header {
 nav {
     position: absolute;
     left: 0;
-    background-color: #263238;
+    background-color: #3a3a3a;
     width: 100vw;
     max-height: 0;
     overflow: hidden;
@@ -60,19 +59,14 @@ nav.active-nav {
   
 .main-menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
 }
   
 .main-menu li {
     margin: 0 1.5rem;
-    line-height: 5rem;
+    line-height: 4rem;
     border-bottom: 1px solid #00263e;
     white-space: nowrap;
     position: relative;
@@ -86,21 +80,21 @@ nav.active-nav {
     display: block;
     padding-left: 0.6rem;
     color: #ffffff;
-    background-color: #263238;
+    background-color: #3a3a3a;
     font-weight: bold;
 }
   
 .main-menu a:active {
     border-radius: 0.3rem;
-    background-color: #263238;
 }
   
 a.first-link {
     display: flex;
-    align-items: center;
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: bold;
+    margin: 0 1.5rem;
+    align-self: right;
 }
   
 a.first-link img {
@@ -113,4 +107,58 @@ a.first-link img:first-of-type {
   
 a.first-link img:last-of-type {
     display: none;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 950px){
+    .menu-icon {
+        display: none;
+    }
+
+    header {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        max-height: 100vh;
+        overflow: visible;
+        position: static;
+    }
+
+    nav a.first-link img:last-of-type {
+        display: inline;
+    }
+    
+    .main-menu {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .main-menu li {
+        border-bottom: none;
+    }
+    
+    .main-menu li > .dropdown-menu {
+        visibility: inherit;
+        opacity: 0;
+    }
+    
+    .main-menu li:hover > .dropdown-menu {
+        visibility: visible;
+        max-height: 100vh;
+        opacity: 1;
+    }
+    
+      .main-menu a:hover {
+        text-decoration: underline;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        right: 0;
+        background-color: #3a3a3a;
+        border-radius: 0.3rem;
+    }
+    
 }
