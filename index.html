@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Totally Semantic Title</title>
 
-		<meta name="author" content="Your Name Here">
+		<meta name="author" content="John Engracia">
 		<meta name="description" content="This is a basic index template; therefore, the content of this tag will need to be updated later.">
 
 		<!-- Google Fonts -->
@@ -15,8 +15,94 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
-		<div class="container">
-			<h1>Hello, world!</h1>
-		</div>
+		<header>
+
+			<div class="blog-container">
+				<h1>
+					<a href="index.html">Blog</a>
+				</h1>
+			</div>
+
+			<nav>
+				<ul class="main-menu">
+					<!-- first tier links -->
+					<li>
+						<a class="first-link" href="index.html">About
+						<img src="img/svg/chevron.svg" alt="Down arrow button">
+						</a>
+						<!-- second tier links -->
+						<ul class="dropdown-menu">
+							<li><a href="#">Bio</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">In the Media</a></li>
+						</ul>
+					</li>
+					<!-- first tier links -->
+					<li>
+						<a class="first-link" href="index.html">Thigns to Do
+						<img src="img/svg/chevron.svg" alt="Down arrow button">
+						</a>
+						<!-- second tier links -->
+						<ul class="dropdown-menu">
+							<li><a href="#">Good Food</a></li>
+							<li><a href="#">Local Travel</a></li>
+							<li><a href="#">Arts & Culture</a></li>
+							<li><a href="#">Family</a></li>
+							<li><a href="#">Festival</a></li>
+						</ul>
+					</li>
+					<!-- first tier links -->
+					<li>
+						<a class="first-link" href="index.html">Contact
+						<img src="img/svg/chevron.svg" alt="Down arrow button">
+						</a>
+						<!-- second tier links -->
+						<ul class="dropdown-menu">
+							<li><a href="#">Video Blog</a></li>
+							
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>Content</h2>
+			</section>
+		</main>
+
+
+		<footer	class="footer">
+			<div class="section">
+				<h4>About</h4>
+				<ul>
+					<li><a href="#">Bio</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">In the Media</a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h4>Things to Do</h4>
+				<ul>
+					<li><a href="#">Good Food</a></li>
+					<li><a href="#">Local Travel</a></li>
+					<li><a href="#">Arts & Culture</a></li>
+					<li><a href="#">Family</a></li>
+					<li><a href="#">Festivals</a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h4>Contact</h4>
+				<ul>
+					<li><a href="#">Video Blog</a></li>
+				</ul>
+			</div>
+			<div class="social-media">
+				<img src="img/svg/facebook.svg" alt="facebook">
+				<img src="img/svg/instagram.svg" alt="instagram">
+				<img src="img/svg/youtube.svg" alt="youtube">
+				<img src="img/svg/linkedin.svg" alt="linkedin">
+			</div>
+		</footer>
 	</body>
 </html>

@@ -1,0 +1,49 @@
+@font-face {
+    font-family:'CopperHewitt';
+    src: url("assignment-two-responsive-assets/CooperHewitt-Heavy.otf") format("opentype");
+}
+
+body {
+    font-family: var(--merriweather);
+    font-family: 'CooperHewitt-Heavy.otf', sans-serif;
+}
+
+h1 a {
+    color: #fff;
+}
+
+/* Header*/
+header {
+    padding: 1rem;
+    background: #3a3a3a;
+}
+
+.blog-container a {
+    text-decoration: none;
+}
+
+.blog-container a:hover {
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    background-color: #3a3a3a;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+nav.active-nav {
+    max-height: 45.3rem;
+}
+
+.main-menu li{
+    margin: 0 1.5rem;
+    line-height: 5rem;
+    border-bottom: 1px solid #00263e;
+    white-space: nowrap;
+    position: relative;
+}
