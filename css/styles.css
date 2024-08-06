@@ -152,6 +152,21 @@ main section p {
     padding: 2rem;
 }
 
+/* Good Food section */
+.good-food {
+    margin-bottom: 2rem;
+}
+
+.content-box {
+    background: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 .h2-container{
     display: inline-block;
     text-align: left;
@@ -167,6 +182,12 @@ main section p {
     color: #707070;
 }
 
+.good-food p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
 .btn {
     background: #3a3a3a;
     color: #ffffff;
@@ -179,6 +200,21 @@ main section p {
 .btn:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.img1 {
+    width: 300px;
+    height: auto;
+}
+
+.img2 {
+    width: 300px;
+    height: auto;
 }
 
 /* Local travel section */
@@ -335,6 +371,40 @@ main section p {
     .stuff-h2-container h2 {
         font-size: 4rem;
     }
+
+    .content-box {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .good-food-text-container {
+        text-align: left;
+        flex: 1;
+    }
+
+    .img-container {
+        flex: 1;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .img1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 250px;
+        height: auto;
+    }
+
+    .img2 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 0;
+        width: 300px;
+        height: auto;
+    }
 }
 
 /* Large View */
@@ -425,7 +495,7 @@ main section p {
 
 
 
-/* Desktop view */
+/* Desktop view for nav and footer */
 @media only screen and (min-width: 950px){
     .menu-icon {
         display: none;
