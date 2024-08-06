@@ -165,8 +165,6 @@ main section p {
     align-items: center;
 }
 
-
-
 .h2-container{
     display: inline-block;
     text-align: left;
@@ -202,11 +200,6 @@ main section p {
     text-decoration: underline;
 }
 
-.img-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
 .img1 {
     width: 300px;
     height: auto;
@@ -424,6 +417,16 @@ main section p {
 
     .stuff-h2-container h2 {
         font-size: 4rem;
+    }
+
+    @media (min-width: 1200px) {
+        .img1 {
+            width: 270px; 
+        }
+    
+        .img2 {
+            width: 320px; 
+        }
     }
 }
 
